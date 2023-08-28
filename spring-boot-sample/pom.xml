@@ -8,7 +8,7 @@
 		<version>3.1.2</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
-	<groupId>com.betrybe.acc.java</groupId>
+	<groupId>com.acc.java</groupId>
 	<artifactId>spring-boot-sample</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>spring-boot-sample</name>
@@ -28,15 +28,20 @@
 			<scope>test</scope>
 		</dependency>
 		<dependency>
-        <groupId>org.hibernate</groupId>
-        <artifactId>hibernate-core</artifactId>
-        <version>5.5.7.Final</version> <!-- Use a versão correta -->
-    </dependency>
-    <dependency>
-        <groupId>org.hibernate</groupId>
-        <artifactId>hibernate-entitymanager</artifactId>
-        <version>5.5.7.Final</version> <!-- Use a versão correta -->
-    </dependency>
+	        <groupId>org.hibernate</groupId>
+	        <artifactId>hibernate-core</artifactId>
+	        <version>5.5.7.Final</version> <!-- Use a versão correta -->
+    	</dependency>
+	    <dependency>
+	        <groupId>org.hibernate</groupId>
+	        <artifactId>hibernate-entitymanager</artifactId>
+	        <version>5.5.7.Final</version> <!-- Use a versão correta -->
+	    </dependency>
+	    <dependency>
+	        <groupId>mysql</groupId>
+	        <artifactId>mysql-connector-java</artifactId>
+	        <version>8.0.32</version>
+	     </dependency>
 	</dependencies>
 
 	<build>

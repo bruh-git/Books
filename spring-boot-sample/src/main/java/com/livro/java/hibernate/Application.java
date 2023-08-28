@@ -11,12 +11,16 @@ public class Application {
 	EntityManagerFactory emf =
 			Persistence.createEntityManagerFactory("com.livro.java.hibernate.samplehibernate");
 	public static void main(String[] args) {
-		Livro l = new Livro();
-		l.setIsbn("121312312");
-		l.setTitulo("Duna");
+		Livro l1 = new Livro();
+		Livro l2 = new Livro();
+		l1.setIsbn("121312312");
+		l1.setTitulo("Duna");
+		l2.setIsbn("121312313");
+		l2.setTitulo("Padrões de Projeto");
 		
 		LivroService service = new LivroService();
-		service.save(l);
+		service.save(l1);
+		service.save(l2);
 		
 		List<Livro> livros = service.list();
 		
